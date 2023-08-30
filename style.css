@@ -1,0 +1,261 @@
+/* Add some CSS code here */
+
+/* Use a universal selector to reset the margin and padding of all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Use a root selector to define some custom properties for colors and fonts */
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --accent-color: #f0f0f0;
+    --font-family: Arial, sans-serif;
+}
+
+/* Use a body selector to set the font family and background color of the body */
+body {
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+}
+
+/* Use a header selector to set the position, width, height, and background color of the header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: var(--primary-color);
+}
+
+/* Use a nav selector to set the display, justify content, align items, and padding of the nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Use a logo selector to set the color and font size of the logo */
+.logo {
+    color: var(--secondary-color);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+
+    /* margin-top: 18px; */
+}
+
+.logo img {
+    width: 50px; /* Adjust the width as needed */
+    height: 55px; /* Maintain aspect ratio */
+    /* width: 300px;
+    height: 300px; */
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Use a menu selector to set the display, list style, and margin of the menu */
+.menu {
+    display: flex;
+    list-style: none;
+    /* margin-top: 18px; */
+    margin-right: -10px;
+}
+
+/* Use a menu li selector to set the margin of the menu items */
+.menu li {
+    margin: 0 10px;
+}
+
+/* Use a menu li a selector to set the display, color, text decoration, padding, and border radius of the menu links */
+.menu li a {
+    display: inline-block;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Use a menu li a:hover selector to set the background color and color of the menu links on hover */
+.menu li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Use a menu li a.active selector to set the background color and color of the active menu link */
+.menu li a.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Use a section selector to set the width, height, display, justify content, align items, and text align of each section */
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Use a container selector to set the width, max width, and margin of the container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Use a section h2 selector to set the color, font size, and margin of the section headings */
+section h2 {
+    color: var(--primary-color);
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Use a section p selector to set the color, font size, and margin of the section paragraphs */
+section p {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Use a btn selector to set the display, color, background color, text decoration, padding, border, border radius, cursor, and transition of the buttons */
+.btn {
+    display: inline-block;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Use a btn:hover selector to set the color and background color of the buttons on hover */
+.btn:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+/* Use an about-content selector to set the display and flex direction of the about content */
+.about-content {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Use an about-image selector to set the width, height, object fit, border radius, and margin of the about image */
+.about-image {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Use an about-text selector to set the width and text align of the about text */
+.about-text {
+    width: 60%;
+    text-align: justify;
+}
+
+/* Use a skills-content selector to set the display and flex wrap of the skills content */
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Use a skill-item selector to set the width, margin, and text align of the skill items */
+.skill-item {
+    width: 25%;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Use a skill-item i selector to set the margin of the skill icons */
+.skill-item i {
+    margin-bottom: 10px;
+}
+
+/* Use a projects-content selector to set the display and flex wrap of the projects content */
+.projects-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Use a project-item selector to set the width, margin, and position of the project items */
+.project-item {
+    width: 25%;
+    margin: 10px;
+    position: relative;
+}
+
+/* Use a project-image selector to set the width, height, object fit, and border radius of the project images */
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Use a project-text selector to set the position, bottom, left, right, padding, background color, color, opacity, and transition of the project text */
+.project-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Use a project-item:hover .project-text selector to set the opacity of the project text on hover */
+.project-item:hover .project-text {
+    opacity: 1;
+}
+
+/* Use a contact-content selector to set the display and flex direction of the contact content */
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Use a contact-form selector to set the width, margin, and display of the contact form */
+.contact-form {
+    width: 60%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Use a contact-form input and contact-form textarea selector to set the width, height, padding, border, border radius, margin, and font size of the input fields and the textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px; /* Add this line */
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust as needed */
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
